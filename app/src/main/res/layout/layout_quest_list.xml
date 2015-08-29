@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeView">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/frameLayout"
+        android:background="#cdcdcd">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/questlist" />
+
+        <!--<ImageButton-->
+            <!--android:layout_margin="15dp"-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:src="@drawable/button_treasurebox"-->
+            <!--android:background="@drawable/circle"-->
+            <!--android:id="@+id/ib_add"-->
+            <!--android:layout_gravity="right|bottom"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:paddingTop="20dp"-->
+            <!--android:paddingBottom="14dp"-->
+            <!--android:scaleType="fitCenter" />-->
+
+    </FrameLayout>
+</RelativeLayout>
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@drawable/tile_spike"
+    android:tileMode="repeat"
+    android:scaleType="fitXY"
+    android:dither="true"  />

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item android:drawable="@drawable/character_hero" android:duration="100" />
+    <item android:drawable="@drawable/character_hero_l1" android:duration="100" />
+    <item android:drawable="@drawable/character_hero_l2" android:duration="100" />
+    <item android:drawable="@drawable/character_hero_l1" android:duration="100" />
+    <item android:drawable="@drawable/character_hero" android:duration="100" />
+    <item android:drawable="@drawable/character_hero_r1" android:duration="100" />
+    <item android:drawable="@drawable/character_hero_r2" android:duration="100" />
+    <item android:drawable="@drawable/character_hero_r1" android:duration="100" />
+</animation-list>
