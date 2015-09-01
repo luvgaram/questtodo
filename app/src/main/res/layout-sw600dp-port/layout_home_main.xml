@@ -2,8 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeView"
-    android:orientation="vertical"
-    android:background="#daceb1">
+    android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/header_fragment"
@@ -11,11 +10,6 @@
         android:layout_height="110dp">
 
     </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/content_fragment"></RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/quest_adding_fragment"
@@ -29,9 +23,23 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#daceb1">
+        android:layout_weight="1">
 
     </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:id="@+id/history_header_fragment"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/history_list_fragment"
+        android:background="#daceb1"></LinearLayout>
 
 
 </LinearLayout>

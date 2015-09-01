@@ -50,7 +50,7 @@ public class QuestAddingFragment extends Fragment implements View.OnClickListene
     private void setLayout(LayoutInflater inflater, ViewGroup container) {
         this.inflater = inflater;
         view = inflater.inflate(R.layout.layout_quest_adding, container, false);
-        type = 0;
+        type = 5;
 
         ImageButton ibGreen = (ImageButton) view.findViewById(R.id.ib_green);
         ImageButton ibBlue = (ImageButton) view.findViewById(R.id.ib_blue);
@@ -109,7 +109,7 @@ public class QuestAddingFragment extends Fragment implements View.OnClickListene
         RelativeLayout relativeLayout = (RelativeLayout) view.findViewById(R.id.rl_background);
         switch (v.getId()) {
             case R.id.ib_green:
-                type = 0;
+                type = 5;
                 relativeLayout.setBackgroundColor(Color.rgb(152, 203, 60));
                 break;
 
@@ -135,7 +135,7 @@ public class QuestAddingFragment extends Fragment implements View.OnClickListene
 
             case R.id.ib_back:
                 etTitle.setText("");
-                type = 0;
+                type = 5;
                 relativeLayout.setBackgroundColor(Color.rgb(152, 203, 60));
                 break;
 

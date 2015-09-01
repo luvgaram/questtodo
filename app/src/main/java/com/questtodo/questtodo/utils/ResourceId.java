@@ -9,13 +9,13 @@ public class ResourceId {
 
     public int getTypeResource(int type) {
         int[] typeArray = new int[] {R.drawable.type_green, R.drawable.type_blue, R.drawable.type_beige,
-                R.drawable.type_orange, R.drawable.type_grey};
+                R.drawable.type_orange, R.drawable.type_grey, R.drawable.type_green};
         return typeArray[type];
     }
 
     public int getTileResource(int type) {
         int[] typeArray = new int[] {R.drawable.tile_green, R.drawable.tile_blue, R.drawable.tile_beige,
-                R.drawable.tile_orange, R.drawable.tile_grey};
+                R.drawable.tile_orange, R.drawable.tile_grey, R.drawable.tile_green};
         return typeArray[type];
     }
 

@@ -14,6 +14,7 @@ import android.widget.ImageView;
 
 import com.questtodo.questtodo.R;
 import com.questtodo.questtodo.utils.FragmentManagerStock;
+import com.questtodo.questtodo.utils.ScreenMesure;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -42,11 +43,13 @@ public class HistoryHeaderFragment extends Fragment implements View.OnClickListe
     private void setLayout(LayoutInflater inflater, ViewGroup container) {
         this.inflater = inflater;
         view = inflater.inflate(R.layout.layout_history_header, container, false);
+        ScreenMesure screenMesure = new ScreenMesure(getActivity());
 
-        ImageButton ibSword = (ImageButton) view.findViewById(R.id.ib_sword);
-
-        ibSword.setOnClickListener(this);
-
+        // sw600 미만 폰만 버튼 클릭 리스너 생성
+        if (screenMesure.getScreenStats() < 600) {
+            ImageButton ibSword = (ImageButton) view.findViewById(R.id.ib_sword);
+            ibSword.setOnClickListener(this);
+        }
     }
 
     private void setHero() {

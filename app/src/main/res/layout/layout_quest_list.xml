@@ -18,19 +18,6 @@
             android:layout_height="wrap_content"
             android:id="@+id/questlist" />
 
-        <!--<ImageButton-->
-            <!--android:layout_margin="15dp"-->
-            <!--android:layout_width="70dp"-->
-            <!--android:layout_height="70dp"-->
-            <!--android:src="@drawable/button_treasurebox"-->
-            <!--android:background="@drawable/circle"-->
-            <!--android:id="@+id/ib_add"-->
-            <!--android:layout_gravity="right|bottom"-->
-            <!--android:adjustViewBounds="true"-->
-            <!--android:paddingTop="20dp"-->
-            <!--android:paddingBottom="14dp"-->
-            <!--android:scaleType="fitCenter" />-->
-
     </FrameLayout>
 </RelativeLayout>
 

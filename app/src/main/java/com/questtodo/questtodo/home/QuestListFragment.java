@@ -40,7 +40,6 @@ public class QuestListFragment extends Fragment {
 
         setLayout(inflater, container);
         setQuestList();
-//        setAddButton();
 
         return view;
     }
@@ -76,25 +75,9 @@ public class QuestListFragment extends Fragment {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
     }
 
-//    private void setAddButton() {
-//
-//        ImageButton imageButton = (ImageButton) view.findViewById(R.id.ib_add);
-//        imageButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Fragment newFragment = new QuestAddingFragment();
-//
-//                FragmentTransaction transaction = FragmentManagerStock.getFragmentManager().beginTransaction();
-//                transaction.replace(R.id.quest_list_fragment, newFragment);
-//                transaction.addToBackStack(null);
-//                transaction.commit();
-//            }
-//        });
-//    }
-
     @Override
     public void onDestroy() {
         super.onDestroy();
-        questTransaction.closeTransaction();
+//        questTransaction.closeTransaction();
     }
 }
